@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Interpretthis - Budget app : Transactions listing</title>
+<link type="text/css" rel="stylesheet" href="/stylesheets/budget.css" />
+</head>
+
+<body>
+<div id="content">
+
+  <h1>Interpretthis - Budget app - {{ user.nickname|escape }}</h1>
+
+  <br></br>
+      {% for tran in trans %} 
+<b>{{ tran.pretty_date }}</b>,
+Value: <b>{{ tran.amount }}</b>, Note: {{ tran.note|escape }}
+<br></br>
+{% endfor %}
+
+<a href="{{ url }}">{{ url_linktext }}</a>
+
+    <p>A web application to help you watch your budget, written by Hansel Dunlop. Send comments or feature requests to hansel (at) interpretthis.org interpretthis.org.</p>
+                                                                 
+
+
+
+
+</div>
+                                                                 </body>
+                                                                 </html>

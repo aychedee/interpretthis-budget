@@ -1,0 +1,28 @@
+body {
+    font-family: Verdana, Helvetica, sans-serif;
+    color: gray;
+    background-color: black;
+}
+
+h1 {
+    font-size: 0.8em;
+
+}
+
+h2 {
+    font-size: 4.7em; 
+
+}
+h3 {
+    font-size: 1em;
+
+}
+
+p {
+    font-size: 0.7em;
+}
+
+#content {
+    margin: 0 auto;    
+    width: 450px;
+}

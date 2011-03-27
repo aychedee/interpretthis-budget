@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Interpretthis - Budget app : Transactions listing</title>
+<link type="text/css" rel="stylesheet" href="/stylesheets/budget.css" />
+</head>
+
+<div id="content">
+  <body>
+  <h1>Interpretthis - Budget app - {{ user.nickname|escape }}</h1>
+  <h3>Left to spend:</h3>
+        <h2>{{ budget.amount }}</h2> 
+      
+
+    <form action="/edit" method="post">
+     <div> <input name="amount" rows="1" cols="20" placeholder="The amount (+/-)" autofocus></div>
+     <div> <input name="note" rows="2" cols="20" placeholder="Transaction note"></div>
+     <div> <input type="submit" value="Add/Subtract"></div>
+    </form>
+
+    <a href="{{ url }}">{{ url_linktext }}</a>
+    <p>A web application to help you watch your budget, written by Hansel Dunlop. Send comments or feature requests to hansel (at) interpretthis.org interpretthis.org.</p>
+
+
+
+
+  </body>
+
+</div>
+
+</html>
